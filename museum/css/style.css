@@ -1,3 +1,5 @@
+/*Указал семейство шрифта для всей страници, и плавный скрол по странице*/
+
 html {
    scroll-behavior: smooth;
    font-family: Roboto, sans-serif;
@@ -111,8 +113,7 @@ section {
 /*Задаю фоновый цвет и фоновую картинку для welcome-section*/
 .welcome-section {
    background: black url(../assets/img/background.jpg) no-repeat;
-
-   background-position: 100%+58px;
+   background-position: calc(100% + 200px) calc(100% + 175px); /*Позиционирование фоновой картинки*/
 }
 
 /*Создаю контейнер для текстового содержимого*/
