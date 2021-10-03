@@ -9,15 +9,19 @@ body,
 header,
 main,
 footer,
-section {
-   border: 1px solid red;
+section,
+h1,
+h2,
+h3,
+p {
    margin: 0;
 }
 
 /*Задаю отступы каждой секции*/
 
 section {
-   padding: 75px 0;
+   padding-top: 75px;
+   padding-bottom: 75px;
 }
 
 /*Задал контейнер для содержимого всего сайта*/
@@ -37,6 +41,7 @@ section {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   padding-left: 15px;
 }
 /*Задал логотип через псевдоэлемент ::before, а также задал форматирование тексту*/
 .logo::before {
@@ -72,16 +77,73 @@ section {
    justify-content: space-between;
    align-items: center;
    padding-left: 0px;
-   padding-right: 6px;
+   padding-right: 7px;
 }
+
+/*Стили форматирования ссылок в меню навигации*/
 
 .navigation a {
    text-decoration: none;
-   font-family: Roboto;
    font-style: normal;
    font-weight: 200;
    font-size: 22px;
    line-height: 50px;
    letter-spacing: 2px;
    color: #ffffff;
+}
+/*Стили для заголовков секций*/
+
+.section-title {
+   font-family: Forum;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 80px;
+   line-height: 90px;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+.white-section {
+   color: #9d8665;
+}
+
+/*Задаю фоновый цвет и фоновую картинку для welcome-section*/
+.welcome-section {
+   background: black url(../assets/img/background.jpg) no-repeat;
+
+   background-position: 100%+58px;
+}
+
+/*Создаю контейнер для текстового содержимого*/
+
+.welcome-section__content {
+   width: 598px;
+   height: 390px;
+   margin: 97px 0 0 0;
+}
+
+/*Задаю форматирование и стили для параграфа и кнопки*/
+.welcome-section__content p {
+   color: #ffffff;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 28px;
+   line-height: 33px;
+   letter-spacing: 2px;
+   padding-top: 16px;
+   margin-bottom: 87px;
+}
+
+.welcome-section__content button {
+   background-color: #710707;
+   width: 360px;
+   height: 75px;
+   border-radius: 10px;
+   font-weight: 100;
+   font-size: 22px;
+   line-height: 26px;
+   letter-spacing: 2px;
+   color: #ffffff;
+   border: none;
 }
