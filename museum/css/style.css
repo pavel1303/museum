@@ -1,0 +1,87 @@
+html {
+   scroll-behavior: smooth;
+   font-family: Roboto, sans-serif;
+}
+
+/*Убрал отступы и временно задал рамки всем секциям и блокам*/
+
+body,
+header,
+main,
+footer,
+section {
+   border: 1px solid red;
+   margin: 0;
+}
+
+/*Задаю отступы каждой секции*/
+
+section {
+   padding: 75px 0;
+}
+
+/*Задал контейнер для содержимого всего сайта*/
+
+.container {
+   margin: 0 auto;
+   width: 1440px;
+}
+/*Редактирую header*/
+/*Сделал цвет текста белый и черный фон*/
+.header {
+   background-color: black;
+   color: white;
+}
+/*Создал флекс контейнер для выравнивания по гризонтали логотипа и навигации*/
+.header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+/*Задал логотип через псевдоэлемент ::before, а также задал форматирование тексту*/
+.logo::before {
+   content: url(" ../assets/svg/logo.svg ");
+   position: relative;
+   right: 10px;
+}
+
+.logo {
+   font-family: Forum;
+   font-size: 28px;
+   line-height: 50px;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+}
+
+/*Обнулил стиль списков и добавил внутренние отступы к элементам списка*/
+
+.navigation li {
+   list-style: none;
+   padding-right: 76px;
+}
+
+.navigation li:last-child {
+   padding-right: 0;
+}
+
+/*Создал флекс контейнер из списка*/
+
+.navigation ul {
+   display: flex;
+   max-width: 720px;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 0px;
+   padding-right: 6px;
+}
+
+.navigation a {
+   text-decoration: none;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 200;
+   font-size: 22px;
+   line-height: 50px;
+   letter-spacing: 2px;
+   color: #ffffff;
+}
