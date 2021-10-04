@@ -5,6 +5,10 @@ html {
    font-family: Roboto, sans-serif;
 }
 
+body {
+   min-width: 1440px;
+}
+
 /*Убрал отступы*/
 
 body,
@@ -43,7 +47,7 @@ section {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding-left: 15px;
+   /*padding-left: 15px;*/
 }
 /*Задал логотип через псевдоэлемент ::before, а также задал форматирование тексту*/
 .logo::before {
@@ -58,6 +62,7 @@ section {
    line-height: 50px;
    letter-spacing: 5px;
    text-transform: uppercase;
+   padding-left: 10px; /*Подвинул лого*/
 }
 
 /*Обнулил стиль списков и добавил внутренние отступы к элементам списка*/
@@ -78,8 +83,8 @@ section {
    max-width: 720px;
    justify-content: space-between;
    align-items: center;
-   padding-left: 0px;
-   padding-right: 7px;
+   /*padding-left: 0px;
+   padding-right: 7px; оказалось не нужным но пока оставлю*/
 }
 
 /*Стили форматирования ссылок в меню навигации*/
@@ -112,7 +117,9 @@ section {
 
 /*Задаю фоновый цвет и фоновую картинку для welcome-section*/
 .welcome-section {
-   background: black url(../assets/img/background.jpg) no-repeat;
+   background-color: black;
+   background-image: url(../assets/img/background.jpg);
+   background-repeat: no-repeat;
    background-position: calc(100% + 200px) calc(100%); /*calc(100% + 200px) calc(100% + 175px); Позиционирование фоновой картинки*/
 }
 
