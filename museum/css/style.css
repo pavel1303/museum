@@ -113,7 +113,7 @@ section {
 /*Задаю фоновый цвет и фоновую картинку для welcome-section*/
 .welcome-section {
    background: black url(../assets/img/background.jpg) no-repeat;
-   background-position: calc(100% + 200px) calc(100% + 175px); /*Позиционирование фоновой картинки*/
+   background-position: calc(100% + 200px) calc(100%); /*calc(100% + 200px) calc(100% + 175px); Позиционирование фоновой картинки*/
 }
 
 /*Создаю контейнер для текстового содержимого*/
@@ -121,7 +121,7 @@ section {
 .welcome-section__content {
    width: 598px;
    height: 390px;
-   margin: 97px 0 0 0;
+   margin: 97px 0 175px 0;
 }
 
 /*Задаю форматирование и стили для параграфа и кнопки*/
@@ -147,4 +147,51 @@ section {
    letter-spacing: 2px;
    color: #ffffff;
    border: none;
+}
+
+/*Создаю подчеркивание для заголовков при помощи псевдоэлемента*/
+
+.underline-title {
+   position: relative;
+}
+
+.underline-title::after {
+   content: "";
+   position: absolute;
+   bottom: -25px;
+   left: 0;
+   right: 0;
+   height: 3px;
+   background-color: #710707;
+}
+
+/*Делаю флекс контейнер для visiting-section*/
+
+.visiting-section__content {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 135px 60px;
+}
+
+/*Делаю из ссылки блочный элемент*/
+
+.visiting-vection__item {
+   display: block;
+}
+
+/*Стиль для заголовков в visiting-section__item*/
+.visiting-vection__item h3 {
+   font-family: Forum;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 32px;
+   line-height: 35px;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   color: #000000;
+}
+
+.visiting-vection__item img {
+   width: 440px;
+   height: 285px;
 }
