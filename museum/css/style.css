@@ -199,7 +199,7 @@ section {
    color: #000000;
    margin-bottom: 22px;
 }
-
+/*Короткое подчеркивание для маленьких заголовков*/
 .underline-title-short {
    position: relative;
 }
@@ -213,13 +213,14 @@ section {
    height: 2px;
    background-color: #710707;
 }
+/*Указываем размер и нижний отступ для изображений в карточках visiting-section*/
 
 .visiting-vection__item img {
    width: 440px;
    height: 285px;
    margin-bottom: 20px;
 }
-
+/*Стилизую все параграфы в карточках*/
 .visiting-vection__item p {
    font-style: normal;
    font-weight: 200;
@@ -227,7 +228,7 @@ section {
    line-height: 26px;
    color: #000000;
 }
-
+/*Стилизую последние параграфы в карточках*/
 .visiting-vection__item p:last-child {
    font-size: 18px;
    line-height: 21px;
