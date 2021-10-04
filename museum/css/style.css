@@ -1,11 +1,11 @@
-/*Указал семейство шрифта для всей страници, и плавный скрол по странице*/
+/*Указал семейство шрифта для всей страницы, и плавный скрол по странице*/
 
 html {
    scroll-behavior: smooth;
    font-family: Roboto, sans-serif;
 }
 
-/*Убрал отступы и временно задал рамки всем секциям и блокам*/
+/*Убрал отступы*/
 
 body,
 header,
@@ -170,7 +170,8 @@ section {
 .visiting-section__content {
    display: flex;
    flex-wrap: wrap;
-   gap: 135px 60px;
+   gap: 78px 60px;
+   margin-top: 100px;
 }
 
 /*Делаю из ссылки блочный элемент*/
@@ -189,9 +190,39 @@ section {
    letter-spacing: 5px;
    text-transform: uppercase;
    color: #000000;
+   margin-bottom: 22px;
+}
+
+.underline-title-short {
+   position: relative;
+}
+
+.underline-title-short::after {
+   content: "";
+   position: absolute;
+   bottom: -12px;
+   left: 0;
+   right: 140px;
+   height: 2px;
+   background-color: #710707;
 }
 
 .visiting-vection__item img {
    width: 440px;
    height: 285px;
+   margin-bottom: 20px;
+}
+
+.visiting-vection__item p {
+   font-style: normal;
+   font-weight: 200;
+   font-size: 22px;
+   line-height: 26px;
+   color: #000000;
+}
+
+.visiting-vection__item p:last-child {
+   font-size: 18px;
+   line-height: 21px;
+   margin-top: 10px;
 }
