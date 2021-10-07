@@ -425,3 +425,40 @@ section {
    letter-spacing: 2px;
    color: #000000;
 }
+
+/*Сделал флекс контейнер из content-section__content*/
+
+.contacts-section__content {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 113px;
+}
+
+/*Стилизовал параграфы в секции*/
+.contacts-section__item p {
+   margin-bottom: 20px;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 22px;
+   line-height: 26px;
+   color: #000000;
+}
+/*Сделал отступ загаловку*/
+.contacts-section h2 {
+   margin-top: 3px;
+}
+/*Стилизовал заголовки в секции*/
+
+.contacts-section__item h3 {
+   margin-bottom: 36px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 28px;
+   line-height: 33px;
+   color: #000000;
+}
+
+/*Добавил внешний отступ картинке*/
+.contacts-section__content img {
+   margin-top: -10px;
+}
