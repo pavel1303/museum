@@ -235,26 +235,26 @@ section {
    line-height: 21px;
    margin-top: 10px;
 }
-/*Сделал флекс контейнер из секции*/
+/*Сделал черный цвет для секции*/
 .explore-section {
    background-color: #000000;
 }
-
+/*Сделал флекс контейнер из секции explore*/
 .explore-section__content {
    display: flex;
    justify-content: space-between;
 }
-
+/*Ограничил ширину текстового контента в блоке*/
 .explore-section__item {
    width: 660px;
 }
-
+/*Задал картинке размер и внешний отступ*/
 .explore-section__content img {
    width: 720px;
    height: 700px;
    margin-top: 15px;
 }
-
+/*Стилизовал параграф для секции explore*/
 .explore-section__item p {
    font-style: normal;
    font-weight: 300;
@@ -262,11 +262,77 @@ section {
    line-height: 38px;
    margin-bottom: 25px;
 }
-
+/*Задал отступ для h2 в секции explore*/
 .explore-section__item h2 {
    margin-bottom: 103px;
 }
 
 .explore-section__item span {
    color: #9d8665;
+}
+/*Сделал флекс контейнер из секции video*/
+.video-section__content {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 42px;
+}
+/*Стилизовал параграф для секции video*/
+.video-section p {
+   width: 720px;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 22px;
+   line-height: 38px;
+   color: #000000;
+   margin-top: 5px;
+}
+/*Имитация видео*/
+.video-section__video {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 1440px;
+   height: 629px;
+   margin-top: 13px;
+   background-image: url("../assets/video/poster.jpg");
+}
+
+/*Верстаю панель для видео*/
+
+.panel {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 1440px;
+   height: 85px;
+   background-color: #000000;
+}
+
+[alt="Back"] {
+   width: 27px;
+   height: 30px;
+}
+[alt="Play"] {
+   width: 23px;
+   height: 30px;
+}
+[alt="Forward"] {
+   width: 27px;
+   height: 30px;
+}
+[alt="Scroll"] {
+   width: 820px;
+   height: 15px;
+}
+[alt="Volume"] {
+   width: 38px;
+   height: 30px;
+}
+[alt="ScrollVolume"] {
+   width: 155px;
+   height: 15px;
+}
+[alt="FullScreen"] {
+   width: 36px;
+   height: 36px;
 }
