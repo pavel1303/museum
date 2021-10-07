@@ -462,3 +462,52 @@ section {
 .contacts-section__content img {
    margin-top: -10px;
 }
+/*Задал черный цвет секции и внутренний отступ */
+.footer {
+   background-color: black;
+   color: #ffffff;
+   padding: 60px 0;
+}
+/*Сделал флекс контейнер из footer-content*/
+.footer-content {
+   display: flex;
+   justify-content: space-between;
+}
+/*Добавил отступы спискам*/
+.footer-content ul {
+   margin-left: 110px;
+}
+/*Подвинул логотип*/
+.footer-content .logo {
+   margin-top: 17px;
+}
+.footer-content .logo::before {
+   padding-right: 11px;
+}
+/*Задал стилизацию элементам списков*/
+.footer-content li {
+   list-style: none;
+   font-style: normal;
+   font-weight: 200;
+   font-size: 22px;
+   line-height: 50px;
+   letter-spacing: 2px;
+}
+/* Стилизовал иконки для соц сетей*/
+.social {
+   display: flex;
+   justify-content: flex-end;
+   flex-grow: 2;
+   margin-top: 103px;
+}
+
+.img-wrapper {
+   width: 45px;
+   height: 45px;
+   margin-left: 23px;
+   border: #ffffff solid 2px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
