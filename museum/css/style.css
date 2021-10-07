@@ -28,6 +28,7 @@ p {
 section {
    padding-top: 75px;
    padding-bottom: 75px;
+   color: white;
 }
 
 /*Задал контейнер для содержимого всего сайта*/
@@ -233,4 +234,39 @@ section {
    font-size: 18px;
    line-height: 21px;
    margin-top: 10px;
+}
+/*Сделал флекс контейнер из секции*/
+.explore-section {
+   background-color: #000000;
+}
+
+.explore-section__content {
+   display: flex;
+   justify-content: space-between;
+}
+
+.explore-section__item {
+   width: 660px;
+}
+
+.explore-section__content img {
+   width: 720px;
+   height: 700px;
+   margin-top: 15px;
+}
+
+.explore-section__item p {
+   font-style: normal;
+   font-weight: 300;
+   font-size: 22px;
+   line-height: 38px;
+   margin-bottom: 25px;
+}
+
+.explore-section__item h2 {
+   margin-bottom: 103px;
+}
+
+.explore-section__item span {
+   color: #9d8665;
 }
