@@ -32,12 +32,14 @@
       </div>
    </header>
    <main class="main">
-      <section class="section welcome-section">
+      <section class="section welcome-section" id="welcome">
          <div class="container">
             <div class="welcome-section__content">
                <h2 class="section-title">Welcome<br> to the louvre</h2>
                <p>From the castle to the museum</p>
-               <button>Discover the Louvre</button>
+               <form
+                  action="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
+                  target="_blank"><button>Discover the Louvre</button></form>
             </div>
          </div>
       </section>
@@ -45,37 +47,43 @@
          <div class="container">
             <h2 class="section-title white-section underline-title">Virtual tour</h2>
             <div class="visiting-section__content">
-               <a class="visiting-vection__item">
+               <a class="visiting-vection__item"
+                  href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815">
                   <img src="assets/img/visit1.jpg" alt="Royal Palace">
                   <h3 class="underline-title-short">Royal Palace</h3>
                   <p>360° Virtual Tour</p>
                   <p>Google Street Panorama View</p>
                </a>
-               <a class="visiting-vection__item">
+               <a class="visiting-vection__item"
+                  href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500">
                   <img src="assets/img/visit2.jpg" alt="Denon Wing">
                   <h3 class="underline-title-short">Denon Wing</h3>
                   <p>360° Virtual Tour</p>
                   <p>Google Street Panorama View</p>
                </a>
-               <a class="visiting-vection__item">
+               <a class="visiting-vection__item"
+                  href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120">
                   <img src="assets/img/visit3.jpg" alt="Colonnade Perrault">
                   <h3 class="underline-title-short">Colonnade Perrault</h3>
                   <p>360° Virtual Tour</p>
                   <p>Google Street Panorama View</p>
                </a>
-               <a class="visiting-vection__item">
+               <a class="visiting-vection__item"
+                  href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736">
                   <img src="assets/img/visit4.jpg" alt="Greek hall">
                   <h3 class="underline-title-short">Greek hall</h3>
                   <p>360° Virtual Tour</p>
                   <p>Google Street Panorama View</p>
                </a>
-               <a class="visiting-vection__item">
+               <a class="visiting-vection__item"
+                  href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120">
                   <img src="assets/img/visit5.jpg" alt="Mona Lisa">
                   <h3 class="underline-title-short">Mona Lisa</h3>
                   <p>360° Virtual Tour</p>
                   <p>Google Street Panorama View</p>
                </a>
-               <a class="visiting-vection__item">
+               <a class="visiting-vection__item"
+                  href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652">
                   <img src="assets/img/visit6.jpg" alt="Night Palace">
                   <h3 class="underline-title-short">Night Palace</h3>
                   <p>360° Virtual Tour</p>
@@ -107,9 +115,13 @@
       <section class="section video-section" id="video">
          <div class="container">
             <div class="video-section__video">
-               <img src="assets/video/panel/big_play.png" alt="Main Play">
+               <iframe width="1440" height="629" src="https://www.youtube.com/embed/U-DOGB4iVBM"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+               <!-- <img src="assets/video/panel/big_play.png" alt="Main Play"> -->
             </div>
-            <div class="panel">
+            <!-- <div class="panel">
                <img src="assets/video/panel/1.png" alt="Back">
                <img src="assets/video/panel/2.png" alt="Play">
                <img src="assets/video/panel/3.png" alt="Forward">
@@ -117,7 +129,7 @@
                <img src="assets/video/panel/5.png" alt="Volume">
                <img src="assets/video/panel/6.png" alt="ScrollVolume">
                <img src="assets/video/panel/7.png" alt="FullScreen">
-            </div>
+            </div> -->
             <div class="video-section__content">
                <h2 class="section-title white-section">Video journey</h2>
                <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa
@@ -175,21 +187,26 @@
          <div class="footer-content">
             <div class="logo">Louvre</div>
             <ul>
-               <li>Welcome</li>
-               <li>Visiting</li>
-               <li>Explore</li>
+               <li><a href="#welcome">Welcome</a></li>
+               <li><a href="#visiting">Visiting</a></li>
+               <li><a href="#explore">Explore</a></li>
             </ul>
             <ul>
-               <li>Video</li>
-               <li>Tickets</li>
-               <li>Contacts</li>
+               <li><a href="#video">Video</a></li>
+               <li><a href="#tickets">Tickets</a></li>
+               <li><a href="#contacts">Contacts</a></li>
             </ul>
             <div class="social">
-               <div class="img-wrapper"><img src="assets/svg/youtube.svg" alt="Youtube"></div>
-               <div class="img-wrapper"><img src="assets/svg/insta.svg" alt="Instagram"></div>
-               <div class="img-wrapper"><img src="assets/svg/fb.svg" alt="Facebook"></div>
-               <div class="img-wrapper"><img src="assets/svg/twitter.svg" alt="Twitter"></div>
-               <div class="img-wrapper"><img src="assets/svg/pinterest.svg" alt="Pinterest"></div>
+               <div class="img-wrapper"><a href="https://www.youtube.com/user/louvre"><img src="assets/svg/youtube.svg"
+                        alt="Youtube"></a></div>
+               <div class="img-wrapper"><a href="https://www.instagram.com/museelouvre/"><img src="assets/svg/insta.svg"
+                        alt="Instagram"></a></div>
+               <div class="img-wrapper"><a href="https://www.facebook.com/museedulouvre"><img src="assets/svg/fb.svg"
+                        alt="Facebook"></a></div>
+               <div class="img-wrapper"><a href="http://twitter.com/museelouvre"><img src="assets/svg/twitter.svg"
+                        alt="Twitter"></a></div>
+               <div class="img-wrapper"><a href="https://www.pinterest.fr/museedulouvre/"><img
+                        src="assets/svg/pinterest.svg" alt="Pinterest"></a></div>
             </div>
          </div>
       </div>
